@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Copper-Oil Ratio",
+    "description": "Copper/oil ratio (CU0 / SC0) aligned to the Shanghai Composite through a lag distribution, with a forward forecast; opens as a sidebar panel and is queryable by the agent."
+  }
+}
