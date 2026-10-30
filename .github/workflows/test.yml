@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 20
       - name: 冒烟测试（无依赖）
-        run: node --test "tests/*.test.mjs"
+        run: node --test
