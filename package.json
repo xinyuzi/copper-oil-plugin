@@ -1,6 +1,6 @@
 {
   "name": "@local/copper-oil",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "private": true,
   "description": "铜油比 · 上证指数预测看板：Host 侧抓取并计算，Web 面板展示。",
   "type": "module",
@@ -36,7 +36,8 @@
     "LICENSE",
     "CHANGELOG.md",
     "locale/*.json",
-    "icon.svg"
+    "icon.svg",
+    "assets"
   ],
   "scripts": {
     "test": "node --test"

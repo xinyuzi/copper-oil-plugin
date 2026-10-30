@@ -2,6 +2,12 @@
 
 版本号遵循语义化版本：`主.次.修订`。
 
+## 1.6.2
+
+- README 重写：加入面板截图（`assets/screenshot.png`）、安装后效果说明、图例详解、交互表、Agent 用法示例与常见问题
+- 测试命令改为 `node --test`（Node 20 不支持 `--test` 后接通配符，CI 之前因此失败）
+- `package.json` 增加 `assets` 到 `files`
+
 ## 1.6.0
 
 - 新增 `Config` 配置项：缓存时长、滞后网格（起止/步长）、滚动窗口、softmax 温度、是否注册 Agent 工具，均可在 `cordis.patch.yml` 覆盖
