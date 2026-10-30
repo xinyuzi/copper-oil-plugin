@@ -39,7 +39,7 @@
     "icon.svg"
   ],
   "scripts": {
-    "test": "node --test \"tests/*.test.mjs\""
+    "test": "node --test"
   },
   "engines": {
     "dsh": ">=0.2.1-rc.3"
