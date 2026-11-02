@@ -35,7 +35,7 @@
 **方式一：克隆仓库**
 
 ```bash
-git clone https://github.com/xinyuzi/copper-oil-plugin.git
+git clone <仓库地址>    # 仓库页 Code 按钮里可复制
 ```
 
 **方式二：下载 ZIP**，解压到任意目录（例如 `D:\dsh-plugins\copper-oil-plugin`）。
@@ -118,7 +118,7 @@ git clone https://github.com/xinyuzi/copper-oil-plugin.git
 ```yaml
 - insert:
     - id: copper-oil
-      name: '@local/copper-oil'
+      name: 'dsh-copper-oil'
       config:
         cacheMinutes: 10
 ```
@@ -145,9 +145,6 @@ git clone https://github.com/xinyuzi/copper-oil-plugin.git
 
 **为什么预测线和历史线看起来对不上？**
 铜油比被整体前移了一个「有效滞后」，两条线的横坐标对齐的是「领先之后的日期」。
-
-**CI 老是发失败邮件？**
-GitHub → Settings → Notifications → System → Actions，选择「不通知」或「仅通知失败的工作流」。
 
 ---
 

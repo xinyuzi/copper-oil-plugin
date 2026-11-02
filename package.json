@@ -1,19 +1,10 @@
 {
-  "name": "@local/copper-oil",
-  "version": "1.6.2",
-  "private": true,
+  "name": "dsh-copper-oil",
+  "version": "1.7.3",
   "description": "铜油比 · 上证指数预测看板：Host 侧抓取并计算，Web 面板展示。",
   "type": "module",
   "license": "MIT",
   "author": "零点风研",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xinyuzi/copper-oil-plugin.git"
-  },
-  "homepage": "https://github.com/xinyuzi/copper-oil-plugin#readme",
-  "bugs": {
-    "url": "https://github.com/xinyuzi/copper-oil-plugin/issues"
-  },
   "keywords": [
     "deepseek-harness",
     "dsh-plugin",
@@ -32,12 +23,10 @@
     "client.js",
     "cordis.patch.yml",
     "README.md",
-    "PUBLISH.md",
     "LICENSE",
     "CHANGELOG.md",
     "locale/*.json",
-    "icon.svg",
-    "assets"
+    "icon.svg"
   ],
   "scripts": {
     "test": "node --test"
@@ -50,6 +39,11 @@
     "@deepseek-ai/dsh-tools": ">=0.2.1-rc.3",
     "@deepseek-ai/dsh-host-webserver": ">=0.2.1-rc.3",
     "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": { "optional": true },
+    "@deepseek-ai/dsh-tools": { "optional": true },
+    "@deepseek-ai/dsh-host-webserver": { "optional": true }
   },
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" },

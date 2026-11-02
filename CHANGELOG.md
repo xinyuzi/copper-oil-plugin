@@ -2,6 +2,28 @@
 
 版本号遵循语义化版本：`主.次.修订`。
 
+## 1.7.3
+
+- `assets` 不再进入 npm 包（截图仅在 GitHub 仓库显示），npm 包体积从 310 KB 降到约 4 KB
+
+## 1.7.2
+
+- 移除 `package.json` 中的 `repository` / `homepage` / `bugs`（不再在包内携带仓库账号信息）
+- 删除 `PUBLISH.md`（个人发布笔记，不随包分发）
+- README 的克隆示例改为通用写法
+- 清理包目录内的本地 `.git`
+
+## 1.7.1
+
+- README 移除「CI 失败邮件」相关问答（属于 GitHub 账号设置，与插件无关）
+
+## 1.7.0
+
+- **包名改为 `dsh-copper-oil`**（原 `@local/copper-oil` 无法发布到 npm）；去掉 `"private": true`
+- `cordis.patch.yml` 与 `client.js` 的模块 id 同步改名
+- DSH 内部包（`@deepseek-ai/cordis`、`dsh-tools`、`dsh-host-webserver`）在 `peerDependenciesMeta` 中标记为可选，避免外部安装时因版本不匹配被拦
+- 可直接 `npm publish` 上架插件市场（GitHub topic 建议加 `dsh-plugin`）
+
 ## 1.6.2
 
 - README 重写：加入面板截图（`assets/screenshot.png`）、安装后效果说明、图例详解、交互表、Agent 用法示例与常见问题
