@@ -2,6 +2,16 @@
 
 版本号遵循语义化版本：`主.次.修订`。
 
+## 1.7.5
+
+- 补回 `repository` / `homepage` / `bugs`，让 npm 包与 GitHub 仓库重新关联（市场可显示下载量、跳转源码）
+- `peerDependencies` 中 `@deepseek-ai/*` 增加显式预发布分支（`>=0.2.1-rc.3 <0.3.0-0 || >=0.3.0-rc.1`），避免未来 harness 预发布版本被 semver 静默排除而触发 `ERESOLVE`
+
+## 1.7.4
+
+- README 安装章节改为「从 npm 安装（推荐）」：直接对助手说安装 `dsh-copper-oil`，不再需要手填仓库地址
+- 源码安装作为备选方式保留
+
 ## 1.7.3
 
 - `assets` 不再进入 npm 包（截图仅在 GitHub 仓库显示），npm 包体积从 310 KB 降到约 4 KB

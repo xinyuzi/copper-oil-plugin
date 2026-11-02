@@ -32,20 +32,23 @@
 
 需要 DSH 桌面端（`engines.dsh >= 0.2.1-rc.3`），无需 Python、无需 `npm install`。
 
-**方式一：克隆仓库**
+**方式一：从 npm 安装（推荐）**
 
-```bash
-git clone <仓库地址>    # 仓库页 Code 按钮里可复制
-```
+在 DSH 的任意会话里对助手说：
 
-**方式二：下载 ZIP**，解压到任意目录（例如 `D:\dsh-plugins\copper-oil-plugin`）。
+> 安装插件 dsh-copper-oil
 
-然后在 DSH 的任意会话里对助手说：
+助手会调用 `plugin_manager`（`action: install_bundle`，`target: dsh-copper-oil`），包从 npm 拉取。
+
+**方式二：从源码安装**
+
+下载仓库的 ZIP 并解压到任意目录（例如 `D:\dsh-plugins\copper-oil-plugin`），然后说：
 
 > 安装本地插件，路径 `D:\dsh-plugins\copper-oil-plugin`
 
-助手会调用 `plugin_manager`（`action: install_bundle`，`target` 指向该目录）。看到返回
-`application: applied` 即安装成功，刷新页面，侧边栏出现图标。
+`target` 指向包含 `package.json` 的那一层目录。
+
+安装成功返回 `application: applied`，刷新页面，侧边栏出现图标。
 
 > ⚠️ 不要在 DSH 的安装目录或 `app.asar` 里放置插件；也不要让助手执行 `npm/pnpm install`，这个包没有第三方依赖。
 
