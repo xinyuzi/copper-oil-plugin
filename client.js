@@ -3,7 +3,7 @@
 // 主图：双纵轴（左铜油比 / 右上证）、三层 P10–P90 扇形带、滚轮缩放、拖动平移、
 // 带缩略走势的底部滑块（拖窗口 / 拖两端 / 点轨道跳转 / 双击复位）。
 window.__ModuleLoader__.load({
-  id: '@local/copper-oil',
+  id: 'dsh-copper-oil',
   factory(require) {
     const React = require('react')
     const { useState, useEffect, useRef, useMemo } = React

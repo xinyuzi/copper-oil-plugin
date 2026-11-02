@@ -1,4 +1,4 @@
 - insert:
     - id: copper-oil
-      name: '@local/copper-oil'
+      name: 'dsh-copper-oil'
       config: {}
